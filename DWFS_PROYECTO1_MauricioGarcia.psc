@@ -16,15 +16,11 @@ Algoritmo DWFS_PROYECTO1
 		entonces descuentoCantidad <- (valorConIva*5)/100;
 		Sino descuentoCantidad <- 0;
 		
-		FinSi
+	Finsi	
 		
 	peso <- leerPeso("Ingresar peso del producto (en Kg):");
-	costoEnvio <- ENVIO+peso*2;
 	
-	Escribir valorConIva;
-	Escribir descuentoCantidad;
-	Escribir costoEnvio;
-	Escribir cant;
+	costoEnvio <- ENVIO+peso*2;
 	
 	precioFinal1 <- (valorConIva - descuentoCantidad)*cant + costoEnvio;
 	precioFinal2 <- valorConIva + costoEnvio;
@@ -39,11 +35,9 @@ Algoritmo DWFS_PROYECTO1
 		
 	SiNo
 		Escribir "El valor total a pagar es: $", precioFinal1;
-		Escribir "El descuento por cupon es de: $", descuentoCupon;
+		Escribir "El descuento por cupon es de: $", valorDesCupon;
 		Escribir "El valor del IVA es de: $", costoIva;
 		Escribir "El costo del envio es de: $", costoEnvio;
-		
-
 		
 	FinSi
 	
